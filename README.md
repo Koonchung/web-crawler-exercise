@@ -1,1 +1,1 @@
-#Srap information of daily books at Amazon.
+#Extract information of daily books at Amazon.
