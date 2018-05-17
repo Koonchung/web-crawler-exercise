@@ -1,1 +1,1 @@
-#Extract information of daily books at Amazon.
+# Web-scraper exercise
