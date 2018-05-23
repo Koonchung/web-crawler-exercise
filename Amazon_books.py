@@ -1,5 +1,7 @@
-#Author:ElvinChan
-#Date:2018.3.15
+# -*- coding: utf-8 -*-
+# Author: ElvinChan
+# Date: 2018.3.15
+
 import requests
 from bs4 import BeautifulSoup
 
@@ -14,19 +16,19 @@ class Amazon_books(object):
             try:
                 self.title = contain.find_all(
                     "a", {"class": "a-link-normal"})  # get the title of books
-                #print(title[1].text.strip())
+                # print(title[1].text.strip())
             except:
                 pass
             self.author = contain.find_all(
                 "span", {"class": "a-size-small a-color-base"})  # get authors
-            #print(author[0].text)
+            # print(author[0].text)
             self.price = contain.find_all(
                 "span", {"class": "a-size-base a-color-price"})  # get price
-            #print(price[0].text)
+            # print(price[0].text)
             try:
                 self.star = contain.find_all(
                     "i", {"class": "a-icon a-icon-star a-star-4-5"})  # get star
-                #print(star[0].text)
+                # print(star[0].text)
             except:
                 pass
             try:
